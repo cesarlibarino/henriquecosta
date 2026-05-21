@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Henrique Costa | Especialista em Fortalecimento de Joelhos</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Cinzel', 'serif'],
+          },
+          colors: {
+            knee: {
+              navy: '#102A43', /* Azul marinho focado em autoridade e saúde */
+              orange: '#F97316', /* Laranja esportivo/energia para regeneração */
+              orangeHover: '#EA580C',
+              lightBg: '#F4F7FA', /* Fundo claro moderno e limpo */
+              dark: '#0B1D33',
+              slate: '#486581'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #F4F7FA; color: #0B1D33; overflow-x: hidden; }
+    
+    .btn-premium {
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(249, 115, 22, 0.3);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 200px;
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-white/90 backdrop-blur-md sticky top-0 w-full z-50 border-b border-knee-navy/10">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="font-serif text-base md:text-xl tracking-wider text-knee-dark font-semibold">
+        HENRIQUE COSTA <span class="font-sans text-[9px] block tracking-widest text-knee-orange font-bold uppercase mt-0.5">Fortalecimento de Joelhos</span>
+      </div>
+      <a href="https://api.whatsapp.com/message/VCKOHID5HDTYJ1?autoload=1&app_absent=0&utm_source=ig" target="_blank" class="btn-premium bg-knee-navy text-white px-5 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase">
+        Avaliação Disponível
+      </a>
+    </div>
+  </header>
+
+  <section class="py-20 md:py-28 bg-gradient-to-b from-white to-knee-lightBg relative">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-7 space-y-6">
+        <span class="inline-flex items-center gap-2 text-knee-navy bg-knee-navy/10 px-4 py-1.5 rounded-full font-bold text-xs uppercase tracking-widest">
+          <i data-lucide="activity" class="w-3.5 h-3.5 text-knee-orange"></i> Método de Alívio e Recuperação Integrada
+        </span>
+        <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-knee-dark leading-[1.2] font-normal">
+          Reduza as dores da <br><span class="italic text-knee-orange font-semibold">Condromalácia e Artrose em até 60 dias.</span>
+        </h1>
+        <p class="text-base md:text-lg text-knee-slate max-w-xl leading-relaxed font-medium">
+          Recupere a estabilidade dos seus movimentos, suba escadas sem sofrimento e volte a treinar. Descubra como fortalecer seu joelho direto da sua casa ou na academia através de um direcionamento focado na sua patologia.
+        </p>
+        <div class="pt-4">
+          <a href="https://api.whatsapp.com/message/VCKOHID5HDTYJ1?autoload=1&app_absent=0&utm_source=ig" target="_blank" class="btn-premium inline-flex items-center gap-3 bg-knee-orange text-white px-10 py-4 rounded-full font-bold text-sm tracking-wide shadow-md">
+            <i data-lucide="clipboard-list" class="w-4 h-4 text-white"></i> Agende Sua Avaliação Aqui
+          </a>
+        </div>
+      </div>
+      
+      <div class="md:col-span-5 relative">
+        <div class="absolute -inset-3 border border-knee-orange/30 rounded-2xl transform translate-x-2 translate-y-2 -z-10"></div>
+        <img src="img/henriquecosta.webp" alt="Henrique Costa - Especialista em Joelhos" class="rounded-2xl w-full aspect-[4/5] object-cover shadow-xl bg-white"
+             onerror="this.src='https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1470&auto=format&fit=crop';">
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest text-knee-orange font-bold">O ciclo da dor no joelho</span>
+        <h2 class="font-serif text-3xl md:text-4xl text-knee-dark mt-2">O que você enfrenta diariamente com o desgaste articular?</h2>
+        <div class="w-12 h-0.5 bg-knee-orange mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 bg-knee-lightBg rounded-xl border border-knee-navy/5">
+          <i data-lucide="alert-triangle" class="w-8 h-8 text-knee-orange mb-4"></i>
+          <h3 class="font-bold text-knee-dark mb-2">Estalos e Rangidos</h3>
+          <p class="text-xs text-knee-slate leading-relaxed font-medium">Sinais claros de atrito patelar e perda de amortecimento na cartilagem protetora.</p>
+        </div>
+        <div class="p-6 bg-knee-lightBg rounded-xl border border-knee-navy/5">
+          <i data-lucide="trending-down" class="w-8 h-8 text-knee-orange mb-4"></i>
+          <h3 class="font-bold text-knee-dark mb-2">Insegurança ao Pisar</h3>
+          <p class="text-xs text-knee-slate leading-relaxed font-medium">A sensação incômoda de que o joelho pode "falhar" ou desestabilizar a qualquer minuto.</p>
+        </div>
+        <div class="p-6 bg-knee-lightBg rounded-xl border border-knee-navy/5">
+          <i data-lucide="frown" class="w-8 h-8 text-knee-orange mb-4"></i>
+          <h3 class="font-bold text-knee-dark mb-2">Limitação Mecânica</h3>
+          <p class="text-xs text-knee-slate leading-relaxed font-medium">Dificuldade crônica para agachar, fazer caminhadas longas ou subir degraus simples.</p>
+        </div>
+        <div class="p-6 bg-knee-lightBg rounded-xl border border-knee-navy/5">
+          <i data-lucide="shield-alert" class="w-8 h-8 text-knee-orange mb-4"></i>
+          <h3 class="font-bold text-knee-dark mb-2">Inflamações Repetitivas</h3>
+          <p class="text-xs text-knee-slate leading-relaxed font-medium">Inchaço constante após pequenos esforços devido ao estresse na articulação desprotegida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-knee-lightBg">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-5 space-y-4">
+          <span class="text-xs uppercase tracking-widest text-knee-orange font-bold">Por que este método funciona?</span>
+          <h2 class="font-serif text-3xl md:text-4xl text-knee-dark leading-tight">Fortalecimento Inteligente sem Sobrecarga</h2>
+          <p class="text-sm text-knee-slate font-medium leading-relaxed">
+            Muitas pessoas agravam as lesões porque executam treinos genéricos. Nosso pilar metodológico se sustenta em blindar a articulação através de estímulos biomecânicos corretos:
+          </p>
+        </div>
+        <div class="md:col-span-7 space-y-6">
+          <div class="bg-white p-6 rounded-xl border border-knee-navy/10 flex gap-4 items-start">
+            <div class="bg-knee-navy/5 text-knee-navy p-2.5 rounded-lg"><i data-lucide="home" class="w-5 h-5 text-knee-orange"></i></div>
+            <div>
+              <h4 class="font-bold text-knee-dark">Flexibilidade Total de Ambiente</h4>
+              <p class="text-xs text-knee-slate mt-1 font-medium leading-relaxed">Adapte o protocolo perfeitamente à sua rotina atual: execute os exercícios específicos em casa ou diretamente na sua academia.</p>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-xl border border-knee-navy/10 flex gap-4 items-start">
+            <div class="bg-knee-navy/5 text-knee-navy p-2.5 rounded-lg"><i data-lucide="target" class="w-5 h-5 text-knee-orange"></i></div>
+            <div>
+              <h4 class="font-bold text-knee-dark">Isolamento Biomecânico Seguro</h4>
+              <p class="text-xs text-knee-slate mt-1 font-medium leading-relaxed">Estímulos milimetricamente desenhados para ativar os músculos estabilizadores da coxa e do quadril, aliviando a pressão direta sobre a patela.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
+      <span class="font-serif text-xs uppercase tracking-widest text-knee-orange font-bold">Seu Treinador</span>
+      <h2 class="font-serif text-3xl md:text-4xl text-knee-dark">Henrique Costa</h2>
+      <p class="text-base text-knee-slate max-w-2xl mx-auto leading-relaxed font-medium">
+        Como especialista focado em reabilitação estrutural e fortalecimento de joelhos, transformo a vida de indivíduos limitados por dores crônicas. Minha missão técnica é guiar você no processo de superação da Condromalácia e da Artrose através da aplicação de ciência de movimento de ponta, devolvendo de forma definitiva a sua autonomia, força e prazer de se movimentar com segurança.
+      </p>
+      <div class="text-xs text-knee-navy font-bold tracking-wider uppercase pt-2">
+        <i data-lucide="check-circle" class="w-3.5 h-3.5 inline mr-1 text-knee-orange"></i> Planejamento focado na eliminação progressiva do impacto articular
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-knee-lightBg">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="font-serif text-2xl md:text-3xl text-knee-dark">Dúvidas Frequentes</h2>
+        <div class="w-12 h-0.5 bg-knee-orange mx-auto mt-3"></div>
+      </div>
+
+      <div class="space-y-4">
+        <div class="faq-item bg-white p-5 rounded-xl border border-knee-navy/10 cursor-pointer" onclick="toggleFaq(this)">
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold text-sm text-knee-dark">Tenho Artrose avançada, eu consigo fazer o protocolo?</h4>
+            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-knee-orange transition-transform"></i>
+          </div>
+          <p class="faq-answer text-xs text-knee-slate mt-3 font-medium leading-relaxed">Sim. O programa conta com níveis de progressão seguros. Iniciamos com exercícios de ativação com zero impacto mecânico para gerar lubrificação sinovial e proteção muscular antes de avançar.</p>
+        </div>
+
+        <div class="faq-item bg-white p-5 rounded-xl border border-knee-navy/10 cursor-pointer" onclick="toggleFaq(this)">
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold text-sm text-knee-dark">Preciso de muitos equipamentos se for treinar em casa?</h4>
+            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-knee-orange transition-transform"></i>
+          </div>
+          <p class="faq-answer text-xs text-knee-slate mt-3 font-medium leading-relaxed">Não. A grande maioria dos exercícios focados na fase de alívio utiliza apenas o peso do próprio corpo ou acessórios simples e de baixo custo (como mini-bands), permitindo excelente ativação.</p>
+        </div>
+
+        <div class="faq-item bg-white p-5 rounded-xl border border-knee-navy/10 cursor-pointer" onclick="toggleFaq(this)">
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold text-sm text-knee-dark">Em quanto tempo começo a notar melhora nas dores?</h4>
+            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-knee-orange transition-transform"></i>
+          </div>
+          <p class="faq-answer text-xs text-knee-slate mt-3 font-medium leading-relaxed">Os resultados variam conforme o grau da lesão, mas a maior parte dos alunos relata um alívio expressivo na estabilidade e redução da dor mecânica logo nas primeiras 3 a 4 semanas de consistência.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-knee-dark text-white text-center relative overflow-hidden">
+    <div class="max-w-3xl mx-auto px-6 relative z-10 space-y-8">
+      <h2 class="font-serif text-3xl md:text-5xl leading-tight font-normal">Volte a se mover com total segurança e sem dor.</h2>
+      <p class="text-slate-300 text-sm md:text-base max-w-xl mx-auto font-medium leading-relaxed">
+        Clique abaixo e converse diretamente comigo via WhatsApp para analisarmos o seu caso clínico e darmos início ao seu processo de reabilitação.
+      </p>
+      <div>
+        <a href="https://api.whatsapp.com/message/VCKOHID5HDTYJ1?autoload=1&app_absent=0&utm_source=ig" target="_blank" class="btn-premium inline-flex items-center gap-3 bg-knee-orange text-white px-12 py-4.5 rounded-full font-bold text-sm tracking-wide shadow-xl">
+          <i data-lucide="message-circle" class="w-5 h-5 text-white"></i> Iniciar Minha Avaliação no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-12 bg-white text-center text-knee-slate text-[10px] font-medium tracking-wider uppercase border-t border-knee-navy/10">
+    <p>© 2026 Henrique Costa — Fortalecimento de Joelhos — Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    function toggleFaq(element) {
+      const isActive = element.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+      if (!isActive) {
+        element.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
